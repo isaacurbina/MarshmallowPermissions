@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MarshmallowPermissionsApp</string>
+    <string name="tv_message_hint">Text goes here</string>
+    <string name="btn_check_text">Check for Permission</string>
+</resources>
