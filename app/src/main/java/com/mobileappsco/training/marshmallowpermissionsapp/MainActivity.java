@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements OnPermissionCallb
         Log.d("MYTAG", message);
         // -1 No permission
 
-        permissionHelper.setForceAccepting(true).request(PERMISSION);
+        permissionHelper.setForceAccepting(false).request(PERMISSION);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements OnPermissionCallb
         Log.d("MYTAG", "onPermissionNeedExplanation " + permissionName);
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("Grant me access")
-                .setMessage("Do I really need to explain you why, just click on 'Allow'")
+                .setMessage("Do I really need to explain you why?, just click on 'Allow'")
                 .setPositiveButton("Request", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
