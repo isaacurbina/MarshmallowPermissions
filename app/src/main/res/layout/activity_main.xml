@@ -14,10 +14,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/tv_message_hint"
         android:id="@+id/tv_message"
         android:textSize="20dp"
-        android:text="" />
+        android:text="@string/tv_message_text" />
 
     <Button
         android:layout_width="wrap_content"
@@ -25,5 +24,106 @@
         android:id="@+id/btn_check"
         android:text="@string/btn_check_text"
         android:onClick="checkPermission"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2_message"
+        android:textSize="20dp"
+        android:text="@string/tv2_message_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start"
+            android:text="@string/btn_start"
+            android:onClick="startService"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_stop"
+            android:text="@string/btn_stop"
+            android:onClick="stopService"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3_message"
+        android:textSize="20dp"
+        android:text="@string/tv3_message_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_bind"
+            android:text="@string/btn_bind"
+            android:onClick="bindService"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_unbind"
+            android:text="@string/btn_unbind"
+            android:onClick="unbindService"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_bound_method"
+        android:text="@string/btn_bound_method"
+        android:onClick="boundMethod"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv4_message"
+        android:textSize="20dp"
+        android:text="@string/tv4_message_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start2"
+            android:text="@string/btn_start2"
+            android:onClick="startIntentService"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_stop2"
+            android:text="@string/btn_stop2"
+            android:onClick="stopIntentService"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sendis"
+        android:text="@string/btn_sendis"
+        android:onClick="sendIntentService"/>
 
 </LinearLayout>

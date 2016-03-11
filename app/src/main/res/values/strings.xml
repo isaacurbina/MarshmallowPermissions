@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">MarshmallowPermissionsApp</string>
-    <string name="tv_message_hint">Text goes here</string>
     <string name="btn_check_text">Check for Permission</string>
+    <string name="btn_start">Start Service</string>
+    <string name="btn_stop">Stop Service</string>
+    <string name="tv_message_text">Permissions</string>
+    <string name="tv2_message_text">Service</string>
+    <string name="tv3_message_text">Bound Service</string>
+    <string name="btn_bind">Bind Service</string>
+    <string name="btn_unbind">Unbind Service</string>
+    <string name="btn_bound_method">Get Timestamp</string>
+    <string name="tv4_message_text">IntentService</string>
+    <string name="btn_stop2">Unregister BR for IS</string>
+    <string name="btn_start2">Register BR for IS</string>
+    <string name="btn_sendis">Start IntentService</string>
 </resources>
